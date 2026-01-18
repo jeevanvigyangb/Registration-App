@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>जीवन विज्ञान यू.के.</title>
+
+  <style>
+    body {
+      font-family: "Noto Sans Devanagari", Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px 20px 80px;
+      text-align: center;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img.logo {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+
+    /* Red bold warning (NO blink) */
+    .warning {
+      font-size: 1.15em;
+      font-weight: bold;
+      color: #b30000;
+      margin-top: 10px;
+    }
+
+    /* Register button */
+a.register-btn {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 25px auto 15px;
+  padding: 20px 0;
+  background: #0b3c5d;   /* dark blue background */
+  color: #ffd700;        /* YELLOW text */
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-weight: bold;     /* bold */
+  text-align: center;
+  animation: slowBlink 1.5s ease-in-out infinite;
+}
+
+    a.register-btn:hover {
+      background: #072a42;
+      transform: scale(1.02);
+    }
+
+    /* Slow blink animation */
+    @keyframes slowBlink {
+      0%   { opacity: 1; }
+      50%  { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    /* Image */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .image-row img {
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-row img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 500px) {
+      .images-row img {
+        width: 120px;
+      }
+    }
+
+    /* Marquee */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #3498db;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 0;
+  margin-top: 5px;   /* very close to images */
+  border-radius: 8px;
+}
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 35s linear infinite;
+    }
+
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <img class="logo" src="image/jv uk logo - Apr 25 final.png" alt="jv uk logo">
+
+    <h1>हार्दिक निमन्त्रणा</h1>
+
+    <p>
+      जीवन विज्ञान यू.के.को आयोजनामा बेलायतमा <br>
+      दोस्रो चक्र विज्ञान २५–३१ जुलाई २०२६ सम्म र <br>
+      पहिलो ऐश्वर्य विज्ञान १–७ अगस्ट २०२६ सम्म <br>
+      Plumstead Manor School, <br>
+      Old Mill Road, Plumstead Common, <br>
+      London, SE18 1QF मा संचालन हुँदैछ।
+    </p>
+
+    <p class="warning">
+      सीटहरू सीमित छन्, कृपया समयमै नाम दर्ता गर्नुहोस्।
+    </p>
+
+    <a class="register-btn" href="https://forms.gle/Vk1TxJfd8MxU4iea9" target="_blank">
+      नाम दर्ता गर्नका लागि क्लिक गर्नुहोस्
+    </a>
+
+<div class="image-row">
+  <a href="https://forms.gle/Vk1TxJfd8MxU4iea9" target="_blank">
+    <img src="image/Chakra.jpg" alt="Chakra">
+  </a>
+
+  <a href="https://forms.gle/Vk1TxJfd8MxU4iea9" target="_blank">
+    <img src="image/Aishwarya.jpg" alt="Aishwarya">
+  </a>
+</div>
+
+<div class="marquee">
+  <span>
+    कतै सहयोग चाहिएमा सम्पर्क: सरिता शर्मा – 07392 205708,
+    प्रेम खड्का – 07786 558461 तथा
+    तुलसी पौडेल – 07810133834
+  </span>
+</div>
+
+</body>
+</html>
